@@ -111,3 +111,25 @@ def compter_multiples(valeur, multiplicateur):
             compteur += 1
             
     return compteur
+
+
+#Exemple de récursivité : Fonction qui s'appelle elle-même
+# Faire une fonction suite_num qui prends en paramètre une valeur n et qui renvoie la valeur n si n est plus grand que 10, sinon on renvoie suite_num(n + 1)
+def suite_num(n):
+    if n > 10:
+        return n
+    
+    return suite_num(n + 1)
+
+# D'après toi, que renverra suite_num(2) ? 
+
+# Exemple d'itération :
+n = 2
+for i in range(10):
+    if n > 10:
+        break
+    n += 1
+
+# OU alors :
+while n <= 10:
+    n += 1
